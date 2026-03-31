@@ -13,7 +13,7 @@ You can use a free GPU in Colab as needed.
 
 Preserving the exact visual fidelity of a table from a compiled document requires treating the page as a high-resolution image. This tool utilizes Document Image Analysis to rasterize pages and apply computer vision techniques to identify structural grids. 
 
-To locate the tables, the algorithm relies on Mathematical Morphology. By passing specific geometric kernels over the image matrix, the algorithm isolates the long horizontal and vertical lines that form table borders. Because analyzing millions of pixels with large kernels is computationally demanding, this mathematical convolution is parallelized on a Graphics Processing Unit using CuPy. 
+To locate the tables, the algorithm relies on mathematical morphology. By passing specific geometric kernels over the image matrix, the algorithm isolates the long horizontal and vertical lines that form table borders. Because analyzing millions of pixels with large kernels is computationally demanding, this mathematical convolution is parallelized on a Graphics Processing Unit using CuPy. 
 
 Finally, to guarantee absolute visual accuracy while providing the requested vector wrapper, the identified table regions are cropped as high-resolution rasters and embedded directly inside an SVG `<image>` container.
 
@@ -21,7 +21,7 @@ Finally, to guarantee absolute visual accuracy while providing the requested vec
 
 | Term  Symbol | Definition |
 | :--- | :--- |
-| **BGR/ RGB** | Blue-Green-Red / Red-Green-Blue (Color channel spaces) |
+| **BGR/ RGB** | Blue-Green-Red/ Red-Green-Blue (Color channel spaces) |
 | **CPU** | Central Processing Unit |
 | **CUDA** | Compute Unified Device Architecture (Parallel computing platform) |
 | **DOM** | Document Object Model |

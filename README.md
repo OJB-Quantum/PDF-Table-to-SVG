@@ -64,7 +64,7 @@ The script defines a horizontal kernel ($1 \times L$) and a vertical kernel ($L 
 
 The script features an upfront parameter block. You can adjust these top-level variables to tune the extraction sensitivity and output dimensions:
 
-* **`SCAN_DPI`** (Default: `300`): The resolution used when rasterizing PDF pages. Higher values yield better clarity at the cost of memory.
+* **`SCAN_DPI`** (Default: `300`): The resolution used when rasterizing PDF pages. Higher values yield better clarity at the cost of memory. I prefer using 600 or 1000 DPI for better clarity.
 * **`MORPH_KERNEL_LENGTH`** (Default: `50`): The length in pixels of the line-detection kernel. Increase this if the script detects text lines as tables; decrease it if small tables are being ignored.
 * **`BINARIZATION_THRESH`** (Default: `200`): The pixel intensity threshold (0-255) for separating ink from the page background.
 * **`PADDING_PX`** (Default: `15`): The physical pixel margin added around the detected table bounding box before cropping.
@@ -76,7 +76,7 @@ The script features an upfront parameter block. You can adjust these top-level v
 
 This project relies on system-level binaries for PDF rendering and `uv` for extremely fast Python package resolution within the Colab environment. The code adheres strictly to PEP 8 style guidelines and PEP 257 docstring conventions. 
 
-Ensure your Colab runtime is set to utilize a GPU (e.g., T4, L4) before execution.
+Ensure your Colab runtime is set to utilize a GPU (e.g., T4, L4, G4, etc) before execution.
 
 ```bash
 # 1. Update system package lists

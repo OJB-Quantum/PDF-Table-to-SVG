@@ -1,5 +1,5 @@
 # PDF-Table-to-SVG
-A tool that runs in the browser using Google Colab and a Graphics Processing Unit (GPU) to identify and convert located tables into Scalable Vector Graphics (SVG) outputs. Control knobs are included for easy parameter adjustment. The code is open source, written by Onri Jay Benally in 2026.
+A tool that runs in the browser using Google Colab and a Graphics Processing Unit (GPU) to identify and convert located tables into Scalable Vector Graphics (SVG) outputs. Control knobs are included for easy parameter adjustment. The Colab code is open source, written by Onri Jay Benally in 2026.
 
 ---
 
